@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>スポット一覧</title>
+</head>
+<body>
+  <h1>取得スポット一覧</h1>
+    <ul>
+    {% for name, url in results %}
+        <li><a href="{{ url }}" target="_blank">{{ name }}</a></li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
